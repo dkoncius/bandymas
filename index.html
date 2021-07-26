@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formos</title>
+  </head>
+  <body>
+    <h1>Formos</h1>
+    <form action="https://www.wikipedia.org/" method="get">
+      <input type="username" name="username" placeholder="Username" required><br><br>
+      <input type="email" name="email" placeholder="Email" required><br><br>
+      <label for="town"><strong>Iš kokio tu miesto?</strong></label><br><br>
+      <select name="town" id="town" required>
+        <option value="" disabled selected>Miestas</option>
+        <option value="vilnius">Vilnius</option>
+        <option value="kaunas">Kaunas</option>
+        <option value="siauliai">Šiauliai</option>
+        <option value="kitas">Kitas</option>
+      </select><br><br>
+
+      <p><strong>Kas tau labiau patinka?</strong></p>
+      <label for="radio1">Kava</label>
+      <input type="radio" name="patinka" value="kava" id="radio1">
+      <label for="radio2">Arbata</label>
+      <input type="radio" name="patinka" value="arbata" id="radio2">
+      <label for="radio3">Energetinis</label>
+      <input type="radio" name="patinka" value="energetinis" id="radio3"><br><br>
+
+      <p><strong>Mėgstamas filmų žanras?</strong></p>
+      <label for="zanras1">Veiksmo</label>
+      <input type="checkbox" name="zanras1" value="veiksmo" id="zanras1">
+      <label for="zanras2">Romantiniai</label>
+      <input type="checkbox" name="zanras2" value="romantiniai" id="zanras2"><br><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
